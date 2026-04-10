@@ -310,6 +310,33 @@ h1,h2,h3,h4 { text-wrap: balance; line-height: 1.15; }
 }
 .skill-tag:hover { color: var(--color-primary); border-color: var(--color-primary); }
 
+/* ===== PROJECTS ===== */
+.projects-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: var(--space-4); }
+.project-card {
+  background: var(--color-surface); border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl); padding: var(--space-5);
+  transition: all var(--transition);
+}
+.project-card:hover { border-color: var(--color-teal); transform: translateY(-2px); }
+.project-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.project-name { font-size: var(--text-sm); font-weight: 600; color: var(--color-text); }
+.project-lang {
+  font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-primary);
+  background: var(--color-primary-glow); border: 1px solid var(--color-border-bright);
+  border-radius: var(--radius-full); padding: 2px var(--space-3);
+}
+.project-desc { font-size: var(--text-sm); color: var(--color-text-muted); line-height: 1.6; margin-bottom: var(--space-4); min-height: 3.2em; }
+.project-meta { display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4); }
+.project-meta span {
+  font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-text-faint);
+  border: 1px solid var(--color-border); border-radius: var(--radius-full); padding: 2px var(--space-3);
+}
+.project-link {
+  display: inline-flex; align-items: center; gap: var(--space-2);
+  font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-primary);
+}
+.project-link:hover { color: var(--color-teal); }
+
 /* ===== AWARDS ===== */
 .awards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: var(--space-4); }
 .award-card {
@@ -420,6 +447,7 @@ footer span { color: var(--color-primary); }
     <a href="#about" class="nav-link">about</a>
     <a href="#education" class="nav-link">education</a>
     <a href="#skills" class="nav-link">skills</a>
+    <a href="#projects" class="nav-link">projects</a>
     <a href="#awards" class="nav-link">awards</a>
     <a href="#contact" class="nav-link">contact</a>
   </div>
@@ -470,12 +498,12 @@ footer span { color: var(--color-primary); }
     </div>
     <div class="hero-stats">
       <div class="hero-stat">
-        <span class="hero-stat-val">92.8</span>
+        <span class="hero-stat-val">93.21</span>
         <span class="hero-stat-label">GPA / 100</span>
       </div>
       <div class="hero-stat">
-        <span class="hero-stat-val">3+</span>
-        <span class="hero-stat-label">Certifications</span>
+        <span class="hero-stat-val">8</span>
+        <span class="hero-stat-label">Public Repos</span>
       </div>
       <div class="hero-stat">
         <span class="hero-stat-val">7+</span>
@@ -535,7 +563,7 @@ footer span { color: var(--color-primary); }
           <span class="t-out">  <span class="t-key">"name"</span>: <span class="t-str">"Nihat Garibli"</span>,</span>
           <span class="t-out">  <span class="t-key">"role"</span>: <span class="t-str">"AI Researcher"</span>,</span>
           <span class="t-out">  <span class="t-key">"location"</span>: <span class="t-str">"Baku, Azerbaijan 🇦🇿"</span>,</span>
-          <span class="t-out">  <span class="t-key">"gpa"</span>: <span class="t-val">92.8</span>,</span>
+          <span class="t-out">  <span class="t-key">"gpa"</span>: <span class="t-val">93.21</span>,</span>
           <span class="t-out">  <span class="t-key">"focus"</span>: [</span>
           <span class="t-out">    <span class="t-str">"Machine Learning"</span>,</span>
           <span class="t-out">    <span class="t-str">"Graph Theory"</span>,</span>
@@ -711,6 +739,59 @@ footer span { color: var(--color-primary); }
         </div>
       </div>
 
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Projects</div>
+      <h2 class="section-title">Featured <em>GitHub work</em></h2>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">origami-recognition-system</h3>
+          <span class="project-lang">Python</span>
+        </div>
+        <p class="project-desc">AI-based origami recognition and instruction generation pipeline combining vision models with geometric reasoning.</p>
+        <div class="project-meta"><span>⭐ 2 stars</span><span>🛠 ML + CV</span></div>
+        <a href="https://github.com/nihatgaribli/origami-recognition-system" target="_blank" rel="noopener noreferrer" class="project-link">View repository →</a>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">Codeforces Solutions</h3>
+          <span class="project-lang">C++</span>
+        </div>
+        <p class="project-desc">Curated solutions for Codeforces problems, emphasizing efficient algorithms and clean competitive programming patterns.</p>
+        <div class="project-meta"><span>⭐ 1 star</span><span>⚙ Algorithms</span></div>
+        <a href="https://github.com/nihatgaribli/Codeforces" target="_blank" rel="noopener noreferrer" class="project-link">View repository →</a>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">CSES Problem Set</h3>
+          <span class="project-lang">C++</span>
+        </div>
+        <p class="project-desc">Structured solutions to CSES tasks across dynamic programming, graph theory, and advanced data structures.</p>
+        <div class="project-meta"><span>⭐ 1 star</span><span>📚 Practice Stack</span></div>
+        <a href="https://github.com/nihatgaribli/CSES" target="_blank" rel="noopener noreferrer" class="project-link">View repository →</a>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">BigData_tasks</h3>
+          <span class="project-lang">Jupyter</span>
+        </div>
+        <p class="project-desc">Notebook-based experiments for data preprocessing, exploratory analysis, and practical big data assignments.</p>
+        <div class="project-meta"><span>⭐ 1 star</span><span>📈 Data Analysis</span></div>
+        <a href="https://github.com/nihatgaribli/BigData_tasks" target="_blank" rel="noopener noreferrer" class="project-link">View repository →</a>
+      </article>
     </div>
   </div>
 </section>
