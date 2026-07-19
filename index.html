@@ -493,6 +493,7 @@ footer span { color: var(--color-primary); }
   "url": "https://nihatgaribli.github.io/portfolio/",
   "image": "https://github.com/nihatgaribli.png",
   "jobTitle": "AI Researcher & Applied Mathematician",
+  "worksFor": { "@type": "Organization", "name": "Baku State University" },
   "email": "mailto:nihatqeribli25@gmail.com",
   "alumniOf": [
     { "@type": "CollegeOrUniversity", "name": "Baku State University" },
@@ -506,7 +507,8 @@ footer span { color: var(--color-primary); }
     "https://orcid.org/0009-0003-4755-6356",
     "https://x.com/gaar1bli",
     "https://www.youtube.com/@nihatgaribli25",
-    "https://www.instagram.com/nihatgariblii/"
+    "https://www.instagram.com/nihatgariblii/",
+    "https://nihatgariblii.medium.com/"
   ]
 }
 </script>
@@ -524,8 +526,10 @@ footer span { color: var(--color-primary); }
   <div class="nav-links">
     <a href="#about" class="nav-link">about</a>
     <a href="#education" class="nav-link">education</a>
+    <a href="#experience" class="nav-link">experience</a>
     <a href="#skills" class="nav-link">skills</a>
     <a href="#projects" class="nav-link">projects</a>
+    <a href="#research" class="nav-link">research</a>
     <a href="#awards" class="nav-link">awards</a>
     <a href="#contact" class="nav-link">contact</a>
   </div>
@@ -544,8 +548,10 @@ footer span { color: var(--color-primary); }
 <div class="mobile-menu" id="mobile-menu">
   <a href="#about">about</a>
   <a href="#education">education</a>
+  <a href="#experience">experience</a>
   <a href="#skills">skills</a>
   <a href="#projects">projects</a>
+  <a href="#research">research</a>
   <a href="#awards">awards</a>
   <a href="#contact">contact</a>
   <a href="mailto:nihatqeribli25@gmail.com">hire me →</a>
@@ -726,6 +732,16 @@ footer span { color: var(--color-primary); }
     <div class="exp-timeline">
 
       <div class="exp-item fade-in">
+        <div class="exp-date">Jun 2026 – Present</div>
+        <div class="exp-role">AI Researcher</div>
+        <div class="exp-company">Baku State University · Baku, Azerbaijan</div>
+        <ul class="exp-desc">
+          <li>Researching applied machine learning and computer vision — from algorithm development to technical publication</li>
+          <li>Building scalable AI solutions grounded in analytical rigor and engineering excellence</li>
+        </ul>
+      </div>
+
+      <div class="exp-item fade-in">
         <div class="exp-date">Jan 2025 – Oct 2025</div>
         <div class="exp-role">Technician — Data Analyst</div>
         <div class="exp-company">Baku State University (TETYM) · Baku, Azerbaijan</div>
@@ -860,11 +876,11 @@ footer span { color: var(--color-primary); }
 
       <article class="project-card fade-in">
         <div class="project-head">
-          <h3 class="project-name">Origami Recognition System</h3>
+          <h3 class="project-name">OriVision — AI Origami Recognition</h3>
           <span class="project-lang">Python</span>
         </div>
-        <p class="project-desc">A computer-vision pipeline for origami recognition — automated dataset building, keyword labelling, and geometric reasoning toward fold classification.</p>
-        <div class="project-meta"><span>👁 Computer Vision</span><span>🗂 Dataset pipeline</span></div>
+        <p class="project-desc">A deep-learning system using CNNs (MobileNetV2) to classify intricate paper models, with a Groq LLM giving real-time, step-by-step folding instructions from visual input.</p>
+        <div class="project-meta"><span>🧠 CNN · MobileNetV2</span><span>🤖 LLM (Groq)</span></div>
         <a href="https://github.com/nihatgaribli/origami-recognition-system" target="_blank" rel="noopener noreferrer" class="project-link">View repository →</a>
       </article>
 
@@ -898,6 +914,49 @@ footer span { color: var(--color-primary); }
         <a href="https://github.com/nihatgaribli/Codeforces" target="_blank" rel="noopener noreferrer" class="project-link">View solutions →</a>
       </article>
 
+    </div>
+  </div>
+</section>
+
+<hr class="divider"/>
+
+<!-- RESEARCH & PUBLICATIONS -->
+<section class="section" id="research">
+  <div class="container">
+    <div class="section-header fade-in">
+      <div class="section-eyebrow">Research &amp; Writing</div>
+      <h2 class="section-title">Publications &amp; <em>research</em></h2>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">Eigenanalysis: From Intuition to Practical Python</h3>
+          <span class="project-lang">Article</span>
+        </div>
+        <p class="project-desc">The role of eigenvalues and eigenvectors in optimizing AI algorithms and understanding the structure of data.</p>
+        <div class="project-meta"><span>📄 Medium · ResearchGate</span><span>🔢 Linear Algebra</span></div>
+        <a href="https://nihatgariblii.medium.com/" target="_blank" rel="noopener noreferrer" class="project-link">Read article →</a>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">Principal Component Analysis: Theory &amp; Python</h3>
+          <span class="project-lang">Article</span>
+        </div>
+        <p class="project-desc">The mathematical derivation of PCA with a step-by-step NumPy implementation for dimensionality reduction.</p>
+        <div class="project-meta"><span>📄 Medium</span><span>📉 Dimensionality Reduction</span></div>
+        <a href="https://nihatgariblii.medium.com/" target="_blank" rel="noopener noreferrer" class="project-link">Read article →</a>
+      </article>
+
+      <article class="project-card fade-in">
+        <div class="project-head">
+          <h3 class="project-name">Academic Identity</h3>
+          <span class="project-lang">ORCID</span>
+        </div>
+        <p class="project-desc">A verified researcher profile linking my publications, contributions and academic work.</p>
+        <div class="project-meta"><span>🧾 0009-0003-4755-6356</span></div>
+        <a href="https://orcid.org/0009-0003-4755-6356" target="_blank" rel="noopener noreferrer" class="project-link">View ORCID →</a>
+      </article>
     </div>
   </div>
 </section>
@@ -1045,6 +1104,10 @@ footer span { color: var(--color-primary); }
         <a href="https://www.instagram.com/nihatgariblii/" target="_blank" rel="noopener noreferrer" class="social-btn">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
           Instagram
+        </a>
+        <a href="https://nihatgariblii.medium.com/" target="_blank" rel="noopener noreferrer" class="social-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zm7.42 0c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg>
+          Medium
         </a>
       </div>
     </div>
